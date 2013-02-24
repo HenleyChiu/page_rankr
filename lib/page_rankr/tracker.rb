@@ -46,7 +46,7 @@ module PageRankr
         self.tracked = clean(raw)
       end
 
-      tracked
+      [tracked, body]
     end
 
     def content(body)
