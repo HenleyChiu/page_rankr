@@ -10,7 +10,6 @@ module PageRankr
         @site = PageRankr::Site(site)
         
         @checksum = Checksum.generate("info:#{tracked_url}")
-        puts "Tracked URL: " + tracked_url.to_s + ", checksum: " + @checksum.to_s
         super(site)
       end
 

@@ -12,7 +12,6 @@ module PageRankr
       url = tracker.url
 
       response = HTTParty.send(method, url, construct_options(tracker))
-      puts "Response: " + response.body.to_s
       yield response.body if block_given?
     end
 
